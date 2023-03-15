@@ -1,5 +1,6 @@
 /* Based on the  Mamun Khandaker's code: https://www.uplabs.com/posts/candle-flame-animation-with-pure-css */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
 
 
 *, *:before, *:after {
@@ -21,8 +22,22 @@ body {
   background-color: #950101;
 }
 
+.happy-bday{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: #dc8a0c;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.counter{
+    padding: 20px 10px;
+    color: white;
+}
+
 .candles{
     display: flex;
+    justify-content: center;
 }
 
 .center {
@@ -88,6 +103,7 @@ body {
 }
  
 .flame {
+  cursor: pointer;
   width: 18px;
   height: 90px;
   left: 50%;
