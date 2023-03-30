@@ -13,13 +13,14 @@
 
 html {
   font-size: 10px;
+  overflow: hidden;
 }
 
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #6e6e6e;
   font-size: 1.6rem;
-  background-color: #950101;
+  background-color: #fce5e5;
 }
 
 .happy-bday{
@@ -38,6 +39,10 @@ body {
 .candles{
     display: flex;
     justify-content: center;
+    position: fixed;
+    bottom: 180px;
+    left: 50%;
+    z-index: 1;
 }
 
 .center {
@@ -46,7 +51,7 @@ body {
 }
 
 .holder {
-  margin: 12rem 20px 0;
+  margin: 0 20px 0;
   width: 40px;
   height: 400px;
   position: relative;
@@ -185,3 +190,65 @@ body {
 @keyframes blinkIt {
   50% { opacity: .8;}
 } 
+
+
+/* Images style  */
+.sign{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.img-sign{
+  width: 100vw;
+  height: 30vh;
+  position: fixed;
+  top: -25px;
+  z-index: -1;
+}
+.table{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-table{
+  position: fixed;
+  bottom: -70%;
+  width: 100%;
+  filter: drop-shadow(0 0 0.5rem #000000);
+}
+
+.table-item{
+  width: 210px;
+  position: fixed;
+  bottom: 20px;
+}
+
+.bee{ 
+  left: 10%;
+}
+
+.estasquad{
+  left: 22%;
+}
+
+.levi{
+  right: 10%;
+}
+
+.bee:hover, .estasquad:hover, .levi:hover{
+  filter: drop-shadow(0 0 1rem #950101);
+  cursor: pointer;
+  width: 220px;
+}
+
+.img-sign:hover{
+  filter: drop-shadow(0 0 1rem #950101);
+  cursor: pointer;
+}
+
+#estasquad-video, #princesas-video{
+  display: none;
+  position: fixed;
+  top: 10%;
+}
