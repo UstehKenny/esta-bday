@@ -27,13 +27,20 @@ body {
     width: 100vw;
     height: 100vh;
     display: none;
+    position: fixed;
+    z-index: 2;
     background-color: #dc8a0c;
     font-family: 'Fuzzy Bubbles', cursive;
 }
 
 .counter{
-    padding: 20px 10px;
-    color: white;
+    padding: 40px 0px;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
 }
 
 .candles{
@@ -124,7 +131,11 @@ body {
   background: linear-gradient(white 80%, transparent);
   animation: moveFlame 6s linear infinite, enlargeFlame 5s linear infinite;
 }
-
+.flame:hover{
+  animation: moveFlameHover 6s linear infinite, enlargeFlame 5s linear infinite;
+  width: 20px;
+  left: 67%;
+}
 .flame:before {
   width: 100%;
   height: 100%;
@@ -138,6 +149,34 @@ body {
   }
   50% {
     transform: translateX(-50%) rotate(2deg);
+  }
+}
+
+@keyframes moveFlameHover {
+  0%, 100% {
+    transform: translateX(-80%) rotate(-1deg);
+  }
+  1%{
+    transform: translateX(-70%) rotate(1deg);
+  }
+  2%{
+    transform: translateX(-80%) rotate(-1deg);
+  }
+  3%{
+    transform: translateX(-70%) rotate(1deg);
+  }
+  4%{
+    transform: translateX(-70%) rotate(1deg);
+  }
+  5%{
+    transform: translateX(-80%) rotate(-1deg);
+  }
+  6%{
+    transform: translateX(-70%) rotate(1deg);
+  }
+
+  50% {
+    transform: translateX(-70%) rotate(3deg);
   }
 }
 
@@ -251,4 +290,15 @@ body {
   display: none;
   position: fixed;
   top: 10%;
+}
+
+.tailus{
+  width: 450px;
+  position: fixed;
+  bottom: 0%;
+  right: 25%;
+}
+
+#tailus2,#tailus3{
+  display: none;
 }
