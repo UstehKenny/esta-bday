@@ -15,12 +15,16 @@ function counter(){
         document.getElementById('flame').style.display = 'none';
         document.getElementById('blinking-glow').style.display = 'none';
         document.getElementById('glow').style.display = 'none';
-        
+        finalImg()
     } else if (i == 18){
+        document.getElementById('tailus4').style.display = 'inline';
+        document.getElementById('tailus3').style.display = 'none';
+        document.getElementById('age').innerHTML = i;
+    } else if (i == 12){
         document.getElementById('tailus3').style.display = 'inline';
         document.getElementById('tailus2').style.display = 'none';
         document.getElementById('age').innerHTML = i;
-    } else if (i == 6){
+    }else if (i == 6){
         document.getElementById('tailus2').style.display = 'inline';
         document.getElementById('tailus1').style.display = 'none';
         document.getElementById('age').innerHTML = i;
@@ -39,4 +43,8 @@ function princesas(){
 
 function finalImg(){
     document.getElementById('final').style.display = 'inline-block';
+}
+
+function moms(){
+    
 }

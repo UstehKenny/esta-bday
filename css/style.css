@@ -23,16 +23,6 @@ body {
   background-color: #fce5e5;
 }
 
-.happy-bday{
-    width: 100vw;
-    height: 100vh;
-    display: none;
-    position: fixed;
-    z-index: 2;
-    background-color: #dc8a0c;
-    font-family: 'Fuzzy Bubbles', cursive;
-}
-
 .counter{
     padding: 40px 0px;
     color: black;
@@ -237,6 +227,16 @@ body {
   justify-content: center;
   width: 100%;
 }
+.poster{
+  position: fixed;
+  width: 1800px;
+  top: 20%;
+  z-index: -1;
+}
+.poster:hover{
+  filter: drop-shadow(0 0 1rem #950101);
+  cursor: pointer;
+}
 .img-sign{
   width: 100vw;
   height: 30vh;
@@ -252,7 +252,7 @@ body {
 
 .img-table{
   position: fixed;
-  bottom: -70%;
+  bottom: 0%;
   width: 100%;
   filter: drop-shadow(0 0 0.5rem #000000);
 }
@@ -260,7 +260,7 @@ body {
 .table-item{
   width: 210px;
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
 }
 
 .bee{ 
@@ -274,12 +274,19 @@ body {
 .levi{
   right: 10%;
 }
-
+.cake{
+  z-index: 3;
+  width: 450px;
+  position: absolute;
+  bottom: 0px;
+  left: -40px;
+}
 .bee:hover, .estasquad:hover, .levi:hover{
   filter: drop-shadow(0 0 1rem #950101);
   cursor: pointer;
   width: 220px;
 }
+
 
 .img-sign:hover{
   filter: drop-shadow(0 0 1rem #950101);
@@ -290,6 +297,7 @@ body {
   display: none;
   position: fixed;
   top: 10%;
+  z-index: 3;
 }
 
 .tailus{
@@ -299,6 +307,24 @@ body {
   right: 25%;
 }
 
-#tailus2,#tailus3{
+#tailus2,#tailus3,#tailus4{
   display: none;
+}
+
+.happy-bday{
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  background-color: #dc8a0c;
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 300px;
+}
+
+@media only screen and (orientation:portrait){
+  body{
+    height: 100vw;
+    transform: rotate(90deg);
+  }
 }
