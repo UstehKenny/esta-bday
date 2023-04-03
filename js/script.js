@@ -8,6 +8,7 @@ document.addEventListener("keyup", function(event){
         document.getElementById('arlett-video').style.display = 'none';
         document.getElementById('puzzle').style.display = 'none';
         document.getElementById('win').style.display = 'none';
+        document.getElementById('warning').style.display = 'none';
     } else return;
 });
 
@@ -91,6 +92,7 @@ function closeScreen(){
     document.getElementById('estasquad-video').style.display = 'none';
     document.getElementById('princesas-video').style.display = 'none';
     document.getElementById('arlett-video').style.display = 'none';
+    document.getElementById('warning').style.display = 'none';
 }
 function posterMom(){
     items++;
