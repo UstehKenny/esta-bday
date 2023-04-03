@@ -271,7 +271,7 @@ body {
   align-items: flex-end;
   position: fixed;
   bottom: 50px;
-  z-index: 2;
+  z-index: 1;
   gap: 2%;
 }
 .table-item{
@@ -341,8 +341,10 @@ body {
   height: 100vh;
   display: none;
   position: fixed;
+  text-align: center;
   z-index: 2;
-  background-color: #dc8a0c;
+  background-color: #950101;
+  color: #DDDDDD;
   font-family: 'Fuzzy Bubbles', cursive;
   font-size: 300px;
 }
@@ -363,6 +365,34 @@ body {
 }
 .puzzle img{
   z-index: 3;
+}
+#win{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 30px;
+  color: #30475e;
+}
+#win1,#win2,#win3,#win4{
+  display: none;
+}
+.card{
+  display: flex;
+  background: #DDDDDD;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  width: 700px;
+  height: 400px;
+}
+
+.card-img{
+  width: 300px;
+  height: auto;
 }
 @media only screen and (orientation:portrait){
   body{
