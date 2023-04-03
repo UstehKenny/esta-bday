@@ -5,6 +5,8 @@ document.addEventListener("keyup", function(event){
         document.getElementById('final').style.display = 'none';
         document.getElementById('estasquad-video').style.display = 'none';
         document.getElementById('princesas-video').style.display = 'none';
+        document.getElementById('arlett-video').style.display = 'none';
+        document.getElementById('puzzle').style.display = 'none';
     } else return;
 });
 
@@ -34,17 +36,28 @@ function counter(){
     
 }
 function estasquad(){
-    document.getElementById('estasquad-video').style.display = 'inline';
+    document.getElementById('estasquad-video').style.display = 'flex';
 }
 
 function princesas(){
-    document.getElementById('princesas-video').style.display = 'inline';
+    document.getElementById('princesas-video').style.display = 'flex';
+}
+
+function arlett(){
+    document.getElementById('arlett-video').style.display = 'flex';
 }
 
 function finalImg(){
     document.getElementById('final').style.display = 'inline-block';
 }
 
-function moms(){
-    
+function puzzle(){
+    document.getElementById('puzzle').style.display = 'flex';
+}
+function closeScreen(){
+    document.getElementById('puzzle').style.display = 'none';
+    document.getElementById('posterMom').style.display = 'none';
+}
+function posterMom(){
+    document.getElementById('posterMom').style.display = 'flex';
 }
