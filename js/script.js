@@ -23,6 +23,11 @@ function counter(){
         document.getElementById('tailus4').style.display = 'inline';
         document.getElementById('tailus3').style.display = 'none';
         document.getElementById('age').innerHTML = i;
+
+        document.getElementById('win').style.display = 'flex';
+        document.getElementById('win4').style.display = 'inline';
+        document.getElementById('win3').style.display = 'none';
+        document.getElementById('age').innerHTML = i;
     } else if (i == 12){
         document.getElementById('tailus3').style.display = 'inline';
         document.getElementById('tailus2').style.display = 'none';
@@ -47,8 +52,8 @@ function counter(){
         document.getElementById('age').innerHTML = i;
     } else if (i == 19){
         document.getElementById('win').style.display = 'flex';
-        document.getElementById('win4').style.display = 'inline';
-        document.getElementById('win3').style.display = 'none';
+        document.getElementById('win5').style.display = 'inline';
+        document.getElementById('win4').style.display = 'none';
         document.getElementById('age').innerHTML = i;
     } else if (i < 20){
         document.getElementById('age').innerHTML = i;
@@ -83,6 +88,9 @@ function closeScreen(){
     document.getElementById('posterMom').style.display = 'none';
     document.getElementById('win').style.display = 'none';
     document.getElementById('final').style.display = 'none';
+    document.getElementById('estasquad-video').style.display = 'none';
+    document.getElementById('princesas-video').style.display = 'none';
+    document.getElementById('arlett-video').style.display = 'none';
 }
 function posterMom(){
     items++;

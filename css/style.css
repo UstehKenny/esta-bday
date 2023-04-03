@@ -346,9 +346,21 @@ body {
   background-color: #950101;
   color: #DDDDDD;
   font-family: 'Fuzzy Bubbles', cursive;
-  font-size: 300px;
+  font-size: 50px;
+  line-height: 110%;
+  padding: 8%;
+  word-break: break-word;
 }
 
+.final-img{
+  width: 400px;
+}
+.sign2{
+  width: 150px;
+}
+.final-fam{
+  width: 150px;
+}
 #puzzle, #posterMom{
   display: none;
 }
@@ -374,12 +386,13 @@ body {
   font-size: 30px;
   color: #30475e;
 }
-#win1,#win2,#win3,#win4{
+#win1,#win2,#win3,#win4,#win5{
   display: none;
 }
 .card{
   display: flex;
   background: #DDDDDD;
+  border:10pt solid #222831;
   border-radius: 5px;
   text-align: center;
   line-height: 50px;
@@ -388,8 +401,13 @@ body {
   flex-direction:column;
   width: 700px;
   height: 400px;
+  word-break: break-word;
 }
-
+#win5{
+  padding: 2%;
+  /* width: 800px; */
+  height: 550px;
+}
 .card-img{
   width: 300px;
   height: auto;
@@ -398,5 +416,175 @@ body {
   body{
     height: 100vw;
     transform: rotate(90deg);
+  }
+}
+
+@media screen and (min-width:2560px) {
+  .img-table{
+    bottom: -30px;
+  }
+  .table-item{
+    width: 220px;
+  }
+  .cake{
+    width: 300px;
+  }
+  .holder{
+    margin: 0 85px 0;
+  }
+  .happy-bday{
+    font-size: 100px;
+  }
+  
+  .final-img{
+    width: 800px;
+  }
+  .sign2{
+    width: 200px;
+  }
+  .final-fam{
+    width: 200px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+ 
+  .happy-bday{
+    font-size: 40px;
+  }
+   
+  .final-img{
+    width: 260px;
+  }
+  .sign2{
+    width: 80px;
+  }
+  .final-fam{
+    width: 80px;
+  }
+}
+
+@media screen and (max-width:915px) {
+
+  body{
+    width: 100vw;
+  }
+  .happy-bday{
+    font-size: 10px;
+    padding: 4%;
+  }
+   
+  .final-img{
+    width: 260px;
+  }
+  .sign2{
+    width: 80px;
+  }
+  .final-fam{
+    width: 80px;
+  }
+  .table-item{
+    width: 60px;
+    height: auto;
+  }
+  .cake{
+    width: 150px;
+  }
+
+  .tailus{
+    /* width: 180px; */
+    width: 20%;
+  }
+  #tailus4{
+    /* width: 250px; */
+    width: 22%;
+  }
+  .m2{
+    /* width: 150px; */
+    width: 15%;
+  }
+  .m1{
+    /* width: 220px; */
+    width: 20%;
+  }
+
+  .candle{
+    /* width: 10px;
+    height: 50px; */
+    width: 30%;
+    height: 10%;
+  }
+  .candle:after{
+    /* width: 9px; */
+    width: 30%;
+    top: 0px;
+  }
+  .thread{
+    /* width: 4px;
+    height: 20px; */
+    width: 26%;
+    height: 55%;
+    top: -16px;
+  }
+  .flame{
+    /* width: 10px;
+    height: 5px; */
+    width: 100%;
+    height: 20%;
+  }
+  .flame:before{
+    height: 0px;
+  }
+  .flame:hover{
+    /* width: 12px; */
+    width: 105%;
+  }
+
+  @keyframes enlargeFlame {
+    0%, 100% {
+      /* height: 60px; */
+      height: 110%;
+    }
+    50% {
+      /* height: 30px; */
+      height: 120%;
+    }
+  }
+  .glow{
+    width: 10px;
+    height: 25px;
+    top: -20px;
+  }
+  .blinking-glow{
+    width: 50px;
+  }
+  .holder{
+    margin: 0 30px 0;
+  }
+
+  .counter{
+    font-size: 12px;
+  }
+  #win5{
+    /* font-size: 20px; */
+    /* width: 500px;
+    height: 400px; */
+    width: 80%;
+    height: 70%;
+    font-size: 40%;
+    line-height: 100%;
+  }
+  #win5 .card-img{
+    /* width: 200px; */
+    width: 25%;
+  }
+  .final-img{
+    width: 30%;
+  }
+  .sign2{
+    width: 12%;
+  }
+  .final-fam{
+    width: 12%;
   }
 }
