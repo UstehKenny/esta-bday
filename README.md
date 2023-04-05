@@ -29,6 +29,7 @@
 
 ### Regalitos 🎁
 
+- EstaSquad uwu
 - EstaNaiSeok1012
 - mariayre
 - pomskyy_
