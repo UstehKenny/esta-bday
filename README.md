@@ -14,11 +14,11 @@
 
 </p>
 
-### Dibujos e imágenes
+### Dibujos e imágenes 🖼️
 
 - ESTAI0KUSUO
 
-### Dinámicas
+### Dinámicas 📝
 
 - EstaNaiSeok1012
 - Estabarix
@@ -26,7 +26,7 @@
 - mariayre
 - pomskyy_
 
-### Regalitos 
+### Regalitos 🎁
 
 - EstaNaiSeok1012
 - mariayre
