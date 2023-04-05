@@ -20,6 +20,7 @@
 
 ### Dinámicas 📝
 
+- ESTAI0KUSUO
 - EstaNaiSeok1012
 - Estabarix
 - arlett_salgado
@@ -32,3 +33,7 @@
 - mariayre
 - pomskyy_
 - Monaart
+
+### Programación 👾
+
+- usteh_kenny
